@@ -21,15 +21,21 @@
         </td>
       </tr>
     </table>
-    <canvas id="myCanvas" width="400" hieght="400" style="border:1px solid #000000;">
+    <canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000;">
     </canvas>
     <script>
-    var c = document.getElementbyId("myCanvas");
+    var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
-    ctx.moveTo9(0,0);
+    ctx.moveTo(0,0);
     ctx.lineTo(400,400);
-    </script>
+    ctx.moveTo(0,400);
+    ctx.lineTo(400,0);
+    ctx.moveTo(200,0);
+    ctx.lineTo(200,400);
+    ctx.moveTo(0,200);
+    ctx.lineTo(400,200);
     ctx.stroke();
+    </script>
   </body>
 
 </html>
